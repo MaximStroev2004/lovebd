@@ -1,3 +1,3 @@
 ## Скриншоты
-![erd](https://github.com/MaximStroev2004/lovebd/assets/120455884/bdc43eed-dc57-484b-bfd0-e4f86f0f9988)
+![erd](https://cdn.discordapp.com/attachments/1159860103638425712/1220358239498145902/erd.png?ex=660ea62d&is=65fc312d&hm=0524cfa7ce43c92effa4796902bb98a634e660f28318d955d073364e48e3842b&)
 
