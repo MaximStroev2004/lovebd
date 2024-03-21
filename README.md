@@ -1,3 +1,3 @@
 ## Скриншоты
-![erd](https://cdn.discordapp.com/attachments/1159860103638425712/1220358239498145902/erd.png?ex=660ea62d&is=65fc312d&hm=0524cfa7ce43c92effa4796902bb98a634e660f28318d955d073364e48e3842b&)
+![erd](http://link.akrapov1c.ru/redirect.php?id=Fesn8L)
 
