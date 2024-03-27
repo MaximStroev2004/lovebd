@@ -61,7 +61,7 @@ CREATE TABLE `customers` (
 
 LOCK TABLES `customers` WRITE;
 /*!40000 ALTER TABLE `customers` DISABLE KEYS */;
-INSERT INTO `customers` VALUES (1,'Иван Иванов','ivan@example.com','+79205134124'),(2,'Петр Петров','petr@example.com','+79205134223'),(3,'Мария Сидорова','maria@example.com','+79205134322'),(4,'Елена Николаева','elena@example.com','+79205134421'),(5,'Алексей Козлов','alex@example.com','+79205134520');
+INSERT INTO `customers` VALUES (1,'Иван Иванов','ivan@mail.ru','+79205134124'),(2,'Петр Петров','petr@mail.ru','+79205134223'),(3,'Мария Сидорова','maria@mail.ru','+79205134322'),(4,'Елена Николаева','elena@mail.ru','+79205134421'),(5,'Алексей Козлов','alex@mail.ru','+79205134520');
 /*!40000 ALTER TABLE `customers` ENABLE KEYS */;
 UNLOCK TABLES;
 
