@@ -29,7 +29,8 @@ LIMIT 3;
 
 4. Получить список всех заказов, сделанных клиентом по имени:
 ```Mysql
-SELECT * FROM orders WHERE customers_id = (SELECT id FROM customers WHERE customer_name = 'Иван Иванов');
+SELECT * FROM orders
+WHERE customers_id = (SELECT id FROM customers WHERE customer_name = 'Иван Иванов');
 ```
 
 5.Получить среднюю сумму заказа:
