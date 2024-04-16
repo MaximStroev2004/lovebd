@@ -19,11 +19,11 @@ AND '2024-09-16';
 
 3.Получить список наиболее популярных моделей обуви:
 ```Mysql
-SELECT shoe_name, SUM(quantity) AS total_quantity_sold 
+SELECT shoes.shoe_name, SUM(orders_details.quantity) AS total_quantity 
 FROM shoes 
-JOIN orders_details ON shoes.id = orders_details.shoe_id 
-GROUP BY shoe_name 
-ORDER BY total_quantity_sold DESC 
+JOIN orders_details ON shoes.id = orders_details.shoes_id 
+GROUP BY shoes.shoe_name 
+ORDER BY total_quantity DESC 
 LIMIT 3;
 ```
 
