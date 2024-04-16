@@ -1,5 +1,5 @@
-## Скриншоты
-[png](https://github.com/MaximStroev2004/lovebd/assets/120455884/6cc0a079-5fa5-4d45-a243-385795efc39b)
+## Скриншоты 
+![Скриншот 1](screen/erd.png)
 
 ##  5 типовых запросов к БД
 
