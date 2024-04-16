@@ -7,23 +7,23 @@
 ```Mysql
 SELECT * FROM brands;
 ```
-2. Получить сумму всех заказов за определенный период времени  с 2024-01-01 по 2024-03-31:
+2. Получить сумму всех заказов за определенный период времени  с 2024-04-15 по 2024-09-16:
 ```Mysql
 SELECT SUM(total_amount) 
 AS total_sales 
 FROM orders 
 WHERE order_date 
-BETWEEN '2024-01-01' 
-AND '2024-03-31';
+BETWEEN '2024-04-15' 
+AND '2024-09-16';
 ```
 
 3.Получить список наиболее популярных моделей обуви:
 ```Mysql
-SELECT shoe_name, SUM(quantity) AS total_quantity_sold 
+SELECT shoes.shoe_name, SUM(orders_details.quantity) AS total_quantity 
 FROM shoes 
-JOIN orders_details ON shoes.id = orders_details.shoe_id 
-GROUP BY shoe_name 
-ORDER BY total_quantity_sold DESC 
+JOIN orders_details ON shoes.id = orders_details.shoes_id 
+GROUP BY shoes.shoe_name 
+ORDER BY total_quantity DESC 
 LIMIT 3;
 ```
 
