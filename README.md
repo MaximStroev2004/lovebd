@@ -37,4 +37,28 @@ WHERE customers_id = (SELECT id FROM customers WHERE customer_name = 'Иван �
 SELECT AVG(total_amount) AS avg_order_amount
 FROM orders;
 ```
+##  Отдельные роли к БД:
+Роль админа:
+```Mysql
+CREATE USER 'admin'@'%' IDENTIFIED BY 'PaSsWoRd';
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+```
 
+Роль покупателя:
+```Mysql
+CREATE USER 'customer'@'localhost';
+GRANT SELECT ON sport_shoes_shop.brands TO 'customer'@'localhost';
+GRANT SELECT ON sport_shoes_shop.customers TO 'customer'@'localhost';
+GRANT SELECT ON sport_shoes_shop.orders TO 'customer'@'localhost';
+GRANT SELECT ON sport_shoes_shop.orders_details TO 'customer'@'localhost';
+GRANT SELECT ON sport_shoes_shop.shoes TO 'customer'@'localhost';
+FLUSH PRIVILEGES;
+```
+
+Роль менеджера:
+```Mysql
+CREATE USER 'manager'@'localhost';
+GRANT SELECT, INSERT, UPDATE, DELETE ON sport_shoes_shop.* TO 'manager'@'localhost';
+FLUSH PRIVILEGES;
+```
