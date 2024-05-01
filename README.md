@@ -62,7 +62,7 @@ CREATE USER 'manager'@'localhost';
 GRANT SELECT, INSERT, UPDATE, DELETE ON sport_shoes_shop.* TO 'manager'@'localhost';
 FLUSH PRIVILEGES;
 ```
-Хранимые процедуры
+## Хранимые процедуры
 1.Добавляем покупателя:
 ```Mysql
 CALL insert_customer('Тихон Михайлович', 'tihon@mail.ru', '+7975123135');
@@ -73,19 +73,19 @@ CALL insert_customer('Тихон Михайлович', 'tihon@mail.ru', '+79751
 SELECT * FROM sport_shoes_shop.customers;
 ```
 
-Представление
+## Представление
 Получение представление о заказах, включая информацию о клиентах, обуви и брендах:
 ```Mysql
 SELECT * FROM sport_shoes_shop.orders_view;
 ```
 
-Пользовательская функция
+## Пользовательская функция
 ```Mysql
 SELECT sport_shoes_shop.total_order_cost(3);
 ```
 Эта пользовательская функция total_order_cost предназначена для вычисления общей стоимости заказов для заданного клиента (по идентификатору клиента) из таблицы orders.
 
-Обработчик исключений
+## Обработчик исключений
 1.Добавляем нового покупателя в бд, получаем запись [Клиент успешно добавился]:
 ```Mysql
 CALL insert_customer('Дарья Савельевна', 'darya@mail.ru', '+7975123134');
